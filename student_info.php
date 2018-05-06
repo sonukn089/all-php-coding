@@ -175,6 +175,7 @@
 				<td><input type="text" name="stream"><span class="error">*</span></td>
 			</tr>
 		</table>
+		<h1 style="background-color: #ff8000;">Previous School/Class Details</h1>
 	</form>
 
 </body>
