@@ -176,6 +176,24 @@
 			</tr>
 		</table>
 		<h1 style="background-color: #ff8000;">Previous School/Class Details</h1>
+		<table>
+			<tr>
+				<td>Class</td>
+				<td>Passing Year</td>
+				<td>School Name</td>
+				<td>Roll No Marks</td>
+				<td>Percentages</td>
+				<td>Subject</td>
+			</tr>
+			<tr>
+				<td><input type="text" name="pclass"></td>
+				<td><input type="text" name="pyear"></td>
+				<td><input type="text" name="sname"></td>
+				<td><input type="text" name="roll"></td>
+				<td><input type="text" name="percentage"></td>
+				<td><input type="text" name="subject"></td>
+			</tr>
+		</table>
 	</form>
 
 </body>
