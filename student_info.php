@@ -90,6 +90,32 @@
 
 		</table>
 		<h1 style="background-color: #ff8000;">Parrent Information</h1>
+		<table>
+			<tr>
+				<td>Father Name</td>
+				<td>Mother Name</td>
+				<td>Caretaker</td>
+				<td>Caretaker Relation</td>
+			</tr>
+			<tr>
+				<td><input type="text" name="fname"><span class="error">*</td>
+				<td><input type="text" name="mname"><span class="error">*</td>
+				<td><input type="text" name="caretaker"></td>
+				<td><input type="text" name="relation"></td>
+			</tr>
+			<tr>
+				<td>Father's Education</td>
+				<td>Mother's Education</td>
+				<td>Father Occupation</td>
+				<td>Mother Occupation</td>
+			</tr>
+			<tr>
+				<td><input type="text" name="feducation"></td>
+				<td><input type="text" name="meducation"></td>
+				<td><input type="text" name="foccupation"></td>
+				<td><input type="text" name="moccupation"></td>
+			</tr>
+		</table>
 	</form>
 
 </body>
