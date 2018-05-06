@@ -115,6 +115,65 @@
 				<td><input type="text" name="foccupation"></td>
 				<td><input type="text" name="moccupation"></td>
 			</tr>
+			<tr>
+				<td>Family Annual Income</td>
+				<td>Address<input type="checkbox" name="familyadd" value="add"><br></td>
+				<td>City<input type="checkbox" name="fcity" value="city"><br></td>
+				<td>State</td>
+			</tr>
+			<tr>
+				<td><input type="text" name="fai"></td>
+				<td><input type="text" name="fadd"></td>
+				<td><input type="text" name="fcity"><span class="error">*</td>
+				<td><input type="text" name="fstate"><span class="error">*</td>
+			</tr>
+			<tr>
+				<td>Pin</td>
+				<td>Counrty</td>
+				<td>Phone Number</td>
+				<td>Father Mobile Number<input type="checkbox" name="fcity" value="city"><br></td></td>
+			</tr>
+			<tr>
+				<td><input type="text" name="fpin"></td>
+				<td><input type="text" name="fcountry"></td>
+				<td><input type="text" name="fphone"></td>
+				<td><input type="text" name="fmobile"></td>
+			</tr>
+			<tr>
+				<td>Mother's Mobile No.</td>
+				<td>Select Transport Service</td>
+				<td>Password</td>
+				<td>Confirm Password</td>
+			</tr>
+			<tr>
+				<td><input type="text" name="mmobile"></td>
+				<td>
+					<select name="transport" required="true">
+						<option>Choose-Transportation</option>
+						<option>Bus</option>
+						<option>Car</option>
+						<option>Volvo</option>
+						<option>Others</option>
+					</select>
+				</td>
+				<td><input type="password" name="password"></td>
+				<td><input type="password" name="cpassword"></td>
+			</tr>
+		</table>
+		<h1 style="background-color: #ff8000;">School Information</h1>
+		<table>
+			<tr>
+				<td>Admission date * (yyyy-mm-dd)</td>
+				<td>Class of add</td>
+				<td>Section</td>
+				<td>Stream</td>
+			</tr>
+			<tr>
+				<td><input type="date" name="adate" min="2000-01-02"></td>
+				<td><input type="text" name="class"></td>
+				<td><input type="text" name="section"></td>
+				<td><input type="text" name="stream"><span class="error">*</span></td>
+			</tr>
 		</table>
 	</form>
 
