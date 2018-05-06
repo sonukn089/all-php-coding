@@ -75,6 +75,18 @@
 				<td><input type="text" name="state"><span class="error">*</td>
 				<td><input type="text" name="pin"><span class="error">*</span></td>
 			</tr>
+			<tr>
+				<td>Country</td>
+				<td>Phone Number</td>
+				<td>Mobile Number</td>
+				<td>Email Address</td>
+			</tr>
+			<tr>
+				<td><input type="text" name="coutry"></td>
+				<td><input type="text" name="phone"></td>
+				<td><input type="text" name="mobile"><span class="error">*</td>
+				<td><input type="text" name="email"><span class="error">*</span></td>
+			</tr>
 
 		</table>
 	</form>
