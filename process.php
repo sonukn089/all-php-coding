@@ -19,6 +19,12 @@
 								
 								echo "Your form has been successfully";
 							}
+							else{
+								echo "Your Password doesn't match";
+							}
+						}
+						else{
+							echo "You have to ";
 						}
 					}
 				}	
