@@ -1,17 +1,17 @@
 <?php
 
-	echo "Scholar Number :".$_POST['scholar_no'];
-	echo "First Name :".$_POST['first_name'];
-	echo "Middile Name :".$_POST['middle_name'];
-	echo "Last Name :".$_POST['scholar_no'];
+	echo "Scholar Number : ".$_POST['scholar_no'];
+	echo "First Name : ".$_POST['first_name'];
+	echo "Middile Name : ".$_POST['middle_name'];
+	echo "Last Name : ".$_POST['scholar_no'];
 	echo "<hr>";
-	echo $_POST['bday'];
-	echo $_POST['gender'];
-	echo $_POST['middle_name'];
-	echo $_POST['scholar_no'];
+	echo "Date of birth : ".$_POST['bday'];
+	echo "Gender : ".$_POST['gender'];
+	echo "Blood Group : ".$_POST['middle_name'];
+	echo "Birth Place : ".$_POST['scholar_no'];
 	echo "<hr>";
-	echo $_POST['mother_tongue'];
-	echo $_POST['category'];
+	echo "Mother Tongue : ".$_POST['mother_tongue'];
+	echo "Category : ".$_POST['category'];
 	echo $_POST['religion'];
 	echo $_POST['address1'];
 	echo "<hr>";
