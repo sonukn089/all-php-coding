@@ -5,7 +5,7 @@
 </head>
 <body>
 
-	<form>
+	<form method="POST" action="Information.php">
 		<h1 style="background-color: #ff8000;">Student Information</h1>
 		<table>
 			<tr>
@@ -82,7 +82,7 @@
 				<td>Email Address</td>
 			</tr>
 			<tr>
-				<td><input type="text" name="coutry"></td>
+				<td><input type="text" name="country"></td>
 				<td><input type="text" name="phone"></td>
 				<td><input type="text" name="mobile"><span class="error">*</td>
 				<td><input type="text" name="email"><span class="error">*</span></td>
@@ -192,6 +192,9 @@
 				<td><input type="text" name="roll"></td>
 				<td><input type="text" name="percentage"></td>
 				<td><input type="text" name="subject"></td>
+			</tr>
+			<tr>
+				<td><input type="submit" name="submit" value="Register Here"></td>
 			</tr>
 		</table>
 	</form>
