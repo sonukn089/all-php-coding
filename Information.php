@@ -1,19 +1,19 @@
 <?php
 
-	echo "Scholar Number : ".$_POST['scholar_no'];
-	echo "First Name : ".$_POST['first_name'];
-	echo "Middile Name : ".$_POST['middle_name'];
-	echo "Last Name : ".$_POST['scholar_no'];
+	echo "Scholar Number : ".$_POST['scholar_no']."<br>";
+	echo "First Name : ".$_POST['first_name']."<br>";
+	echo "Middile Name : ".$_POST['middle_name']."<br>";
+	echo "Last Name : ".$_POST['scholar_no']."<br>";
 	echo "<hr>";
-	echo "Date of birth : ".$_POST['bday'];
-	echo "Gender : ".$_POST['gender'];
-	echo "Blood Group : ".$_POST['middle_name'];
+	echo "Date of birth : ".$_POST['bday']."<br>";
+	echo "Gender : ".$_POST['gender']."<br>";
+	echo "Blood Group : ".$_POST['middle_name']."<br>";
 	echo "Birth Place : ".$_POST['scholar_no'];
 	echo "<hr>";
 	echo "Mother Tongue : ".$_POST['mother_tongue'];
 	echo "Category : ".$_POST['category'];
-	echo $_POST['religion'];
-	echo $_POST['address1'];
+	echo "Religion : ".$_POST['religion'];
+	echo "Address Line 1 :".$_POST['address1'];
 	echo "<hr>";
 	echo $_POST['address2'];
 	echo $_POST['city'];
