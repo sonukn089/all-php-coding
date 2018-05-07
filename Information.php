@@ -1,9 +1,9 @@
 <?php
 
-	echo $_POST['scholar_no'];
-	echo $_POST['first_name'];
-	echo $_POST['middle_name'];
-	echo $_POST['scholar_no'];
+	echo "Scholar Number :".$_POST['scholar_no'];
+	echo "First Name :".$_POST['first_name'];
+	echo "Middile Name :".$_POST['middle_name'];
+	echo "Last Name :".$_POST['scholar_no'];
 	echo "<hr>";
 	echo $_POST['bday'];
 	echo $_POST['gender'];
