@@ -32,61 +32,61 @@
 <?php
 	echo "Country : ".$_POST['country']."<br>";
 	echo "Phone No : ".$_POST['phone']."<br>";
-	echo $_POST['mobile']."<br>";
-	echo $_POST['email']."<br>";
+	echo "Mobile No : ".$_POST['mobile']."<br>";
+	echo "Email : ".$_POST['email']."<br>";
 	echo "<hr>";
 ?>
 <h1 style="background-color: #ff8000;">Parrent Information</h1>
 <?php
-	echo $_POST['fname']."<br>";
-	echo $_POST['mname']."<br>";
-	echo $_POST['caretaker']."<br>";
-	echo $_POST['relation']."<br>";
+	echo "Father Name : ".$_POST['fname']."<br>";
+	echo "Mother Name : ".$_POST['mname']."<br>";
+	echo "Caretaker : ".$_POST['caretaker']."<br>";
+	echo "Relation : ".$_POST['relation']."<br>";
 	echo "<hr>";
 ?>
 <?php
-	echo $_POST['feducation']."<br>";
-	echo $_POST['meducation']."<br>";
-	echo $_POST['foccupation']."<br>";
-	echo $_POST['moccupation']."<br>";
+	echo "Father Education : ".$_POST['feducation']."<br>";
+	echo "Mother Education : ".$_POST['meducation']."<br>";
+	echo "Father Occupation : ".$_POST['foccupation']."<br>";
+	echo "Mother Occupation : ".$_POST['moccupation']."<br>";
 	echo "<hr>";
 ?>
 <?php
-	echo $_POST['fai']."<br>";
-	echo $_POST['fadd']."<br>";
-	echo $_POST['fcity']."<br>";
-	echo $_POST['fstate']."<br>";
+	echo "Family Annual Income : ".$_POST['fai']."<br>";
+	echo "Father Address : ".$_POST['fadd']."<br>";
+	echo "Father City : ".$_POST['fcity']."<br>";
+	echo "Father State : ".$_POST['fstate']."<br>";
 	echo "<hr>";
 ?>
 <?php
-	echo $_POST['fpin']."<br>";
-	echo $_POST['fcountry']."<br>";
-	echo $_POST['fphone']."<br>";
-	echo $_POST['fmobile']."<br>";
+	echo "Father Pin : ".$_POST['fpin']."<br>";
+	echo "Father Counrty : ".$_POST['fcountry']."<br>";
+	echo "Phone Number : ".$_POST['fphone']."<br>";
+	echo "Father's Mobile No : ".$_POST['fmobile']."<br>";
 	echo "<hr>";
 ?>
 <?php
-	echo $_POST['mmobile']."<br>";
-	echo $_POST['transport']."<br>";
-	echo $_POST['password']."<br>";
-	echo $_POST['cpassword']."<br>";
+	echo "Mother's Mobile No : ".$_POST['mmobile']."<br>";
+	echo "Select Transport Service : ".$_POST['transport']."<br>";
+	echo "Password : ".$_POST['password']."<br>";
+	echo "Confirm Password : ".$_POST['cpassword']."<br>";
 	echo "<hr>";
 ?>
 <h1 style="background-color: #ff8000;">School Information</h1>
 <?php
-	echo $_POST['adate']."<br>";
-	echo $_POST['class']."<br>";
-	echo $_POST['section']."<br>";
-	echo $_POST['stream']."<br>";
+	echo "Admission date : ".$_POST['adate']."<br>";
+	echo "Class of add : ".$_POST['class']."<br>";
+	echo "Section : ".$_POST['section']."<br>";
+	echo "Stream : ".$_POST['stream']."<br>";
 	echo "<hr>";
 ?>
 
 <?php
-	echo $_POST['pclass']."<br>";
-	echo $_POST['pyear']."<br>";
-	echo $_POST['sname']."<br>";
-	echo $_POST['roll']."<br>";
-	echo $_POST['percentage']."<br>";
-	echo $_POST['subject']."<br>";
+	echo "Class :".$_POST['pclass']."<br>";
+	echo "Passing Year : ".$_POST['pyear']."<br>";
+	echo "School Name : ".$_POST['sname']."<br>";
+	echo "Roll No Marks : ".$_POST['roll']."<br>";
+	echo "Percentages % : ".$_POST['percentage']."<br>";
+	echo "Subject : ".$_POST['subject']."<br>";
 ?>
 
