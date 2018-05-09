@@ -129,7 +129,7 @@
 			</tr>
 			<tr>
 				<td>Pin</td>
-				<td>Counrty</td>
+				<td>Country</td>
 				<td>Phone Number</td>
 				<td>Father Mobile Number<input type="checkbox" name="fcity" value="city"><br></td></td>
 			</tr>
