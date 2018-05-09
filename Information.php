@@ -1,4 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Student Information Page</title>
+</head>
+<body>
 
+</body>
+</html>
 <h1 style="background-color: #ff8000;">Student Information</h1>
 <?php
 
