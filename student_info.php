@@ -84,7 +84,7 @@
 			<tr>
 				<td><input type="text" name="country"></td>
 				<td><input type="text" name="phone"></td>
-				<td><input type="text" name="mobile"><span class="error">*</td>
+				<td><input type="number" name="mobile"><span class="error">*</td>
 				<td><input type="email" name="email"><span class="error">*</span></td>
 			</tr>
 
