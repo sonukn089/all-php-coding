@@ -13,15 +13,17 @@
 				<td>First Name</td>
 				<td>Middile Name</td>
 				<td>Last Name</td>
+				<td>Admission Date</td>
 			</tr>
 			<tr>
 				<td><input type="text" name="scholar_no"></td>
-				<td><input type="text" name="first_name"><span class="error">*</span></td>
+				<td><input type="text" name="first_name"><span class="error"></span></td>
 				<td><input type="text" name="middle_name"></td>
-				<td><input type="text" name="scholar_no"><span class="error">*</span></td>
+				<td><input type="text" name="last_name"><span class="error">*</span></td>
+				<td><input type="date" name="admission_date" min="2000-01-02"></td>
 			</tr>
 			<tr>
-				<td>Date of birth * (yyyy-mm-dd)</td>
+				<td>Date of birth *(yyyy-mm-dd)</td>
 				<td>Gender</td>
 				<td>Blood Group</td>
 				<td>Birth Place</td>
@@ -32,8 +34,8 @@
 					<input type="radio" name="gender" value="male" checked>Male
 					<input type="radio" name="gender" value="female">Female
 				</td>
-				<td><input type="text" name="middle_name"></td>
-				<td><input type="text" name="scholar_no"></span></td>
+				<td><input type="text" name="blood_group"></td>
+				<td><input type="text" name="birth_place"></span></td>
 			</tr>
 			<tr>
 				<td>Mother Tongue</td>
@@ -160,7 +162,7 @@
 				<td><input type="password" name="cpassword"></td>
 			</tr>
 		</table>
-		<h1 style="background-color: #ff8000;">School Information</h1>
+		<h1 style="background-color: #ff8000;">Class Information</h1>
 		<table>
 			<tr>
 				<td>Admission date * (yyyy-mm-dd)</td>
