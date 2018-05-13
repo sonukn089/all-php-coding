@@ -5,20 +5,124 @@
 
 	mysql_connect($path, $user, $password) or die("We couldn't connect");
 	$con = mysql_select_db("testschool");
-
-	$sqlClassInformation = mysql_query("INSERT INTO `class_information`(`class_add`, `section`, `stream`, `created`) VALUES ('".$_POST['class']."','".$_POST['section']."','".$_POST['stream']."','".$_POST['adate']."')");
-
-	$class_info_id = mysql_insert_id();
-
-	$sqlClassInformation = mysql_query("INSERT INTO `parent_info`(`father_name`, `mother_name`, `caretaker`, `caretaker_relation`, `father_education`, `mother_education`, `father_occupation`, `mother_occupation`, `family_ai`, `address`, `city`, `pin`, `state`, `country`, `phone_number`, `father_mn`, `mother_mn`, `select_ts`, `password`, `cassword`) VALUES ('".$_POST['fname']."','".$_POST['mname']."','".$_POST['caretaker']."','".$_POST['relation']."','".$_POST['feducation']."','".$_POST['meducation']."','".$_POST['foccupation']."','".$_POST['moccupation']."','".$_POST['fai']."','".$_POST['fadd']."','".$_POST['fcity']."','".$_POST['fpin']."','".$_POST['fstate']."','".$_POST['fcountry']."','".$_POST['phone']."','".$_POST['fmobile']."','".$_POST['mmobile']."','".$_POST['transport']."','".$_POST['password']."','".$_POST['cpassword']."')");
+	
+	$sqlParentInformation = mysql_query(
+		"INSERT INTO `parent_info`(
+			`father_name`, 
+			`mother_name`, 
+			`caretaker`, 
+			`caretaker_relation`, 
+			`father_education`, 
+			`mother_education`, 
+			`father_occupation`, 
+			`mother_occupation`, 
+			`family_ai`, 
+			`address`, 
+			`city`, 
+			`pin`, 
+			`state`, 
+			`country`, 
+			`phone_number`, 
+			`father_mn`, 
+			`mother_mn`, 
+			`select_ts`, 
+			`password`, 
+			`cassword`) 
+		VALUES ('
+			".$_POST['fname']."',
+			'".$_POST['mname']."',
+			'".$_POST['caretaker']."',
+			'".$_POST['relation']."',
+			'".$_POST['feducation']."',
+			'".$_POST['meducation']."',
+			'".$_POST['foccupation']."',
+			'".$_POST['moccupation']."',
+			'".$_POST['fai']."',
+			'".$_POST['fadd']."',
+			'".$_POST['fcity']."',
+			'".$_POST['fpin']."',
+			'".$_POST['fstate']."',
+			'".$_POST['fcountry']."',
+			'".$_POST['phone']."',
+			'".$_POST['fmobile']."',
+			'".$_POST['mmobile']."',
+			'".$_POST['transport']."',
+			'".$_POST['password']."',
+			'".$_POST['cpassword']."')
+		");
 
 	$parent_id = mysql_insert_id();
 
-	$sqlStudent = mysql_query("INSERT INTO `students`(`class_info_id`, `parent_id`, `schlor_no`, `admission_date`, `first_name`, `middle_name`, `last_name`, `dob`, `gender`, `blood_group`, `birth_place`, `mother_toung`, `category`, `relegion`, `address`, `city`, `state`, `pin`, `country`, `mobile`, `email`, `created`) VALUES ('".$class_info_id."','".$parent_id."','".$_POST['scholar_no']."','".$_POST['admission_date']."','".$_POST['first_name']."','".$_POST['middle_name']."','".$_POST['last_name']."','".$_POST['bday']."','".$_POST['gender']."','".$_POST['blood_group']."','".$_POST['birth_place']."','".$_POST['mother_tongue']."','".$_POST['category']."','".$_POST['religion']."','".$_POST['address1']."','".$_POST['city']."','".$_POST['state']."','".$_POST['pin']."','".$_POST['country']."','".$_POST['mobile']."','".$_POST['email']."','2018-05-11')");
+	$query = "SELECT id FROM `class_information` WHERE `class_add` = '".$_POST['class']."' AND `section` = '".$_POST['section']."' AND `stream` = '".$_POST['stream']."'";
+	$classInfo = mysql_query($query);
+	$row = mysql_fetch_array($classInfo, MYSQL_ASSOC);
+	$class_id = $row['id'];
+
+	$query = "INSERT INTO `students`(
+			`class_info_id`, 
+			`parent_id`, 
+			`schlor_no`, 
+			`admission_date`, 
+			`first_name`, 
+			`middle_name`, 
+			`last_name`, 
+			`dob`, 
+			`gender`, 
+			`blood_group`, 
+			`birth_place`, 
+			`mother_toung`, 
+			`category`, 
+			`relegion`, 
+			`address`, 
+			`city`, 
+			`state`, 
+			`pin`, 
+			`country`, 
+			`mobile`, 
+			`email`) 
+		VALUES ('".$class_id."',
+			'".$parent_id."',
+			'".$_POST['scholar_no']."',
+			'".$_POST['admission_date']."',
+			'".$_POST['first_name']."',
+			'".$_POST['middle_name']."',
+			'".$_POST['last_name']."',
+			'".$_POST['bday']."',
+			'".$_POST['gender']."',
+			'".$_POST['blood_group']."',
+			'".$_POST['birth_place']."',
+			'".$_POST['mother_tongue']."',
+			'".$_POST['category']."',
+			'".$_POST['religion']."',
+			'".$_POST['address1']."',
+			'".$_POST['city']."',
+			'".$_POST['state']."',
+			'".$_POST['pin']."',
+			'".$_POST['country']."',
+			'".$_POST['mobile']."',
+			'".$_POST['email']."')";
+			
+	$sqlStudent = mysql_query($query);
 
 	$student_id = mysql_insert_id();
 
-	$sqlPrevious_school = mysql_query("INSERT INTO `previous_school`(`student_id`, `class`, `passing_year`, `school_name`, `roll_no`, `percentages`, `subject`, `created`) VALUES ('".$student_id."','".$_POST['pclass']."','".$_POST['pyear']."','".$_POST['sname']."','".$_POST['roll']."','".$_POST['percentage']."','".$_POST['subject']."','2018-05-11')");
+	$query = "INSERT INTO `previous_school`(
+		`student_id`, 
+		`class`, 
+		`passing_year`, 
+		`school_name`, 
+		`roll_no`, 
+		`percentages`, 
+		`subject`) 
+	VALUES ('".$student_id."',
+		'".$_POST['pclass']."',
+		'".$_POST['pyear']."',
+		'".$_POST['sname']."',
+		'".$_POST['roll']."',
+		'".$_POST['percentage']."',
+		'".$_POST['subject']."')";
+
+	$sqlPrevious_school = mysql_query($query);
 
 	echo "Sucessfully Record Insert";
 
