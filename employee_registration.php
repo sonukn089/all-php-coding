@@ -12,11 +12,13 @@
 					<td>First Name</td>
 					<td>Middile Name</td>
 					<td>Last Name</td>
+					<td>Email</td>
 				</tr>
 				<tr>
 					<td><input type="text" name="first_name"></td>
 					<td><input type="text" name="middle_name"></td>
 					<td><input type="text" name="last_name"></td>
+					<td><input type="email" name="email"></td>
 				</tr>
 				<tr>
 					<td>D.O.B</td>
@@ -58,12 +60,12 @@
 					</td>
 				</tr>
 				<tr>
-					<td>Email</td>
+					
 					<td>Phone</td>
 					<td>Mobile</td>
 				</tr>
 				<tr>
-					<td><input type="email" name="email"></td>
+					
 					<td><input type="number" name="pnumber"></td>
 					<td><input type="number" name="mnumber"></td>
 				</tr>
