@@ -22,17 +22,23 @@
 				</tr>
 				<tr>
 					<td>D.O.B</td>
+					<td>Gender</td>
 					<td>Father Name</td>
 					<td>Mother Name</td>
 				</tr>
 				<tr>
 					<td><input type="date" name="dob"></td>
+					<td>
+						<input type="radio" name="gender" value="male">Male
+						<input type="radio" name="gender" value="female">Female
+					</td>
 					<td><input type="text" name="fname"></td>
 					<td><input type="text" name="mname"></td>
 				</tr>
 				<tr>
 					<td>Nationality</td>
-					<td>Gender</td>
+					<td>Phone</td>
+					<td>Mobile</td>
 					<td>Marital Status</td>
 				</tr>
 				<tr>
@@ -46,10 +52,8 @@
 							<option>Others</option>
 						</select>
 					</td>
-					<td>
-						<input type="radio" name="gender" value="male">Male
-						<input type="radio" name="gender" value="female">Female
-					</td>
+					<td><input type="number" name="pnumber"></td>
+					<td><input type="number" name="mnumber"></td>
 					<td>
 						<select name="marital" required="true">
 							<option>Choose-Marital Status</option>
@@ -60,34 +64,16 @@
 					</td>
 				</tr>
 				<tr>
-					
-					<td>Phone</td>
-					<td>Mobile</td>
-				</tr>
-				<tr>
-					
-					<td><input type="number" name="pnumber"></td>
-					<td><input type="number" name="mnumber"></td>
-				</tr>
-				<tr>
 					<td>Adress</td>
 					<td>City</td>
-					<td>State</td>
-				</tr>
-				<tr>
-					<td><input type="text" name="adress"></td>
-					<td><input type="text" name="city"></td>
-					<td><input type="text" name="state"></td>
-				</tr>
-				<tr>
+					<td>Country</td>
 					<td>Postal Code</td>
-					<td>City</td>
-					<td>State</td>
 				</tr>
 				<tr>
 					<td><input type="text" name="adress"></td>
 					<td><input type="text" name="city"></td>
 					<td><input type="text" name="state"></td>
+					<td><input type="number" name="postal_code"></td>
 				</tr>
 
 
