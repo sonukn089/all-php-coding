@@ -107,8 +107,38 @@
 					</td>
 					<td><input type="text" name="skills"></td>
 					<td><input type="text" name="designation"></td>
-
-					
+				</tr>
+				<tr>
+					<td>Previous Company</td>
+					<td>Deparment</td>
+					<td>Experience</td>
+					<td>Annual Income</td>
+				</tr>
+				<tr>
+					<td><input type="text" name="adress"></td>
+					<td><input type="text" name="city"></td>
+					<td>
+						<select name="experience">
+							<option>Hom Many Experience</option>
+							<option>1</option>
+							<option>2</option>
+							<option>3</option>
+							<option>4</option>
+							<option>5</option>
+							<option>5+</option>
+						</select>
+					</td>
+					<td>
+						<select name="annual">
+							<option>Select Annual Income</option>
+							<option>1 Lack</option>
+							<option>2 Lack</option>
+							<option>3 Lack</option>
+							<option>4 Lack</option>
+							<option>5 Lack</option>
+							<option>5+ Lack</option>
+						</select>
+					</td>
 				</tr>
 			</table>
 		</form>
