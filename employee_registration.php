@@ -95,6 +95,19 @@
 							<option>BBA</option>
 						</select>
 					</td>
+					<td>
+						<select name="pgraduation">
+							<option>Slecet-Post Graduation</option>
+							<option>MA</option>
+							<option>MSc</option>
+							<option>MCA</option>
+							<option>M Tech</option>
+							<option>MBA</option>
+						</select>
+					</td>
+					<td><input type="text" name="skills"></td>
+					<td><input type="text" name="designation"></td>
+
 					
 				</tr>
 			</table>
