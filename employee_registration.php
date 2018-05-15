@@ -77,6 +77,27 @@
 				</tr>
 			</table>
 			<h1 style="background: red; color: white;">Education Details and Experience</h1>
+			<table>
+				<tr>
+					<td>Graduation</td>
+					<td>Post Graduation</td>
+					<td>IT Skills</td>
+					<td>Designation</td>
+				</tr>
+				<tr>
+					<td>
+						<select name="graduation">
+							<option>Slecet-Graduation</option>
+							<option>B.A</option>
+							<option>BSc</option>
+							<option>BCA</option>
+							<option>B.Tech</option>
+							<option>BBA</option>
+						</select>
+					</td>
+					
+				</tr>
+			</table>
 		</form>
 	</center>	
 </body>
