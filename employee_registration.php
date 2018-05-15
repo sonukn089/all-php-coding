@@ -141,6 +141,21 @@
 					</td>
 				</tr>
 			</table>
+			<h1 style="background: red; color: white;">Salary-Structures</h1>
+			<table>
+				<tr>
+					<td>Cost To Company (CTC)</td>
+					<td></td>
+					<td>Last Name</td>
+					<td>Email</td>
+				</tr>
+				<tr>
+					<td><input type="text" name="first_name"></td>
+					<td><input type="text" name="middle_name"></td>
+					<td><input type="text" name="last_name"></td>
+					<td><input type="email" name="email"></td>
+				</tr>
+			</table>
 		</form>
 	</center>	
 </body>
