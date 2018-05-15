@@ -75,9 +75,8 @@
 					<td><input type="text" name="state"></td>
 					<td><input type="number" name="postal_code"></td>
 				</tr>
-
-
 			</table>
+			<h1 style="background: red; color: white;">Education Details and Experience</h1>
 		</form>
 	</center>	
 </body>
