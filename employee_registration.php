@@ -156,10 +156,10 @@
 					<td><input type="number" name="email"></td>
 				</tr>
 				<tr>
-					<td>Cost To Company (CTC)</td>
-					<td>Basic Salay</td>
-					<td>HRA</td>
-					<td>Take Home Salary</td>
+					<td>Employees' Provident Fund</td>
+					<td>Universal Account Number (UAN)</td>
+					<td>Employees' State Insurance</td>
+					<td>Dearness Allowance</td>
 				</tr>
 				<tr>
 					<td><input type="number" name="ctc"></td>
@@ -168,7 +168,7 @@
 					<td><input type="number" name="email"></td>
 				</tr>
 				<tr>
-					<td><input type="submit" name="submit"></td>
+					<td><input type="submit" name="submit" value="Register Here"></td>
 				</tr>
 			</table>
 		</form>
