@@ -145,15 +145,30 @@
 			<table>
 				<tr>
 					<td>Cost To Company (CTC)</td>
-					<td></td>
-					<td>Last Name</td>
-					<td>Email</td>
+					<td>Basic Salay</td>
+					<td>HRA</td>
+					<td>Take Home Salary</td>
 				</tr>
 				<tr>
-					<td><input type="text" name="first_name"></td>
-					<td><input type="text" name="middle_name"></td>
-					<td><input type="text" name="last_name"></td>
-					<td><input type="email" name="email"></td>
+					<td><input type="number" name="ctc"></td>
+					<td><input type="number" name="basic_salary"></td>
+					<td><input type="number" name="hra"></td>
+					<td><input type="number" name="email"></td>
+				</tr>
+				<tr>
+					<td>Cost To Company (CTC)</td>
+					<td>Basic Salay</td>
+					<td>HRA</td>
+					<td>Take Home Salary</td>
+				</tr>
+				<tr>
+					<td><input type="number" name="ctc"></td>
+					<td><input type="number" name="basic_salary"></td>
+					<td><input type="number" name="hra"></td>
+					<td><input type="number" name="email"></td>
+				</tr>
+				<tr>
+					<td><input type="submit" name="submit"></td>
 				</tr>
 			</table>
 		</form>
