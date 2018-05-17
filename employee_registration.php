@@ -6,7 +6,7 @@
 <body>
 	<center>
 		<h1 style="background: red; color: white;">Employee Registration Form</h1>
-		<form method="POST" action="cccc.php">
+		<form method="POST" action="employee_data.php">
 			<table>
 				<tr>
 					<td>First Name</td>
