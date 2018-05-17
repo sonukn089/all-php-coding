@@ -52,5 +52,23 @@
 		echo "<hr>";
 	?>
 
+	<h1 style="background: red; color: white;">Salary-Structures</h1>
+
+	<?php
+		echo "Cost To Company (CTC) : ".$_POST['ctc']."<br>";
+		echo "Basic Salay : ".$_POST['basic_salary']."<br>";
+		echo "HRA : ".$_POST['hra']."<br>";
+		echo "Take Home Salary : ".$_POST['ths']."<br>";
+		echo "<hr>";
+	?>
+	
+	<?php
+		echo "Cost To Company (CTC) : ".$_POST['ctc']."<br>";
+		echo "Basic Salay : ".$_POST['basic_salary']."<br>";
+		echo "HRA : ".$_POST['hra']."<br>";
+		echo "Take Home Salary : ".$_POST['ths']."<br>";
+		echo "<hr>";
+	?>
+
 </body>
 </html>
