@@ -163,7 +163,7 @@
 				</tr>
 				<tr>
 					<td><input type="number" name="epf"></td>
-					<td><input type="number" name="basic_salary"></td>
+					<td><input type="number" name="uan"></td>
 					<td><input type="number" name="hra"></td>
 					<td><input type="number" name="da"></td>
 				</tr>
