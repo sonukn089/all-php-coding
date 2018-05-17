@@ -64,7 +64,7 @@
 					</td>
 				</tr>
 				<tr>
-					<td>Adress</td>
+					<td>Address</td>
 					<td>City</td>
 					<td>Country</td>
 					<td>Postal Code</td>
