@@ -63,10 +63,10 @@
 	?>
 	
 	<?php
-		echo "Cost To Company (CTC) : ".$_POST['ctc']."<br>";
-		echo "Basic Salay : ".$_POST['basic_salary']."<br>";
-		echo "HRA : ".$_POST['hra']."<br>";
-		echo "Take Home Salary : ".$_POST['ths']."<br>";
+		echo "Employees' Provident Fund : ".$_POST['epf']."<br>";
+		echo "Universal Account Number (UAN) : ".$_POST['uan']."<br>";
+		echo "Employees' State Insurance : ".$_POST['esic']."<br>";
+		echo "Dearness Allowance : ".$_POST['da']."<br>";
 		echo "<hr>";
 	?>
 
