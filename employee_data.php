@@ -52,7 +52,7 @@
 		echo "<hr>";
 	?>
 
-	<h1 style="background: red; color: white;">Salary-Structures</h1>
+	<h1 style="background: blue; color: white;">Salary-Structures</h1>
 
 	<?php
 		echo "Cost To Company (CTC) : ".$_POST['ctc']."<br>";
