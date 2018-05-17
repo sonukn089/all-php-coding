@@ -70,7 +70,7 @@
 					<td>Postal Code</td>
 				</tr>
 				<tr>
-					<td><input type="text" name="adress"></td>
+					<td><input type="text" name="address"></td>
 					<td><input type="text" name="city"></td>
 					<td><input type="text" name="state"></td>
 					<td><input type="number" name="postal_code"></td>
