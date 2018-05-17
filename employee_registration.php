@@ -115,8 +115,8 @@
 					<td>Annual Income</td>
 				</tr>
 				<tr>
-					<td><input type="text" name="adress"></td>
-					<td><input type="text" name="city"></td>
+					<td><input type="text" name="previous_company"></td>
+					<td><input type="text" name="deparment"></td>
 					<td>
 						<select name="experience">
 							<option>Hom Many Experience</option>
