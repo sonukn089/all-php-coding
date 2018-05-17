@@ -6,7 +6,7 @@
 <body>
 	<center>
 		<h1 style="background: red; color: white;">Employee Registration Form</h1>
-		<form method="POST" action="cccc.php">
+		<form method="POST" action="employee_data.php">
 			<table>
 				<tr>
 					<td>First Name</td>
@@ -64,13 +64,13 @@
 					</td>
 				</tr>
 				<tr>
-					<td>Adress</td>
+					<td>Address</td>
 					<td>City</td>
 					<td>Country</td>
 					<td>Postal Code</td>
 				</tr>
 				<tr>
-					<td><input type="text" name="adress"></td>
+					<td><input type="text" name="address"></td>
 					<td><input type="text" name="city"></td>
 					<td><input type="text" name="state"></td>
 					<td><input type="number" name="postal_code"></td>
@@ -153,22 +153,22 @@
 					<td><input type="number" name="ctc"></td>
 					<td><input type="number" name="basic_salary"></td>
 					<td><input type="number" name="hra"></td>
-					<td><input type="number" name="email"></td>
+					<td><input type="number" name="ths"></td>
 				</tr>
 				<tr>
-					<td>Cost To Company (CTC)</td>
-					<td>Basic Salay</td>
-					<td>HRA</td>
-					<td>Take Home Salary</td>
+					<td>Employees' Provident Fund</td>
+					<td>Universal Account Number (UAN)</td>
+					<td>Employees' State Insurance</td>
+					<td>Dearness Allowance</td>
 				</tr>
 				<tr>
-					<td><input type="number" name="ctc"></td>
-					<td><input type="number" name="basic_salary"></td>
-					<td><input type="number" name="hra"></td>
-					<td><input type="number" name="email"></td>
+					<td><input type="number" name="epf"></td>
+					<td><input type="number" name="uan"></td>
+					<td><input type="number" name="esic"></td>
+					<td><input type="number" name="da"></td>
 				</tr>
 				<tr>
-					<td><input type="submit" name="submit"></td>
+					<td><input type="submit" name="submit" value="Register Here"></td>
 				</tr>
 			</table>
 		</form>
