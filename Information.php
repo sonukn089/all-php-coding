@@ -54,8 +54,11 @@
 	$parent_id = mysql_insert_id();
 
 	$query = "SELECT id FROM `class_information` WHERE `class_add` = '".$_POST['class']."' AND `section` = '".$_POST['section']."' AND `stream` = '".$_POST['stream']."'";
+
 	$classInfo = mysql_query($query);
+
 	$row = mysql_fetch_array($classInfo, MYSQL_ASSOC);
+	
 	$class_id = $row['id'];
 
 	$query = "INSERT INTO `students`(
