@@ -58,7 +58,7 @@
 	$classInfo = mysql_query($query);
 
 	$row = mysql_fetch_array($classInfo, MYSQL_ASSOC);
-	
+
 	$class_id = $row['id'];
 
 	$query = "INSERT INTO `students`(
@@ -130,6 +130,7 @@
 	echo "Sucessfully Record Insert";
 
 ?>
+
 
 
 

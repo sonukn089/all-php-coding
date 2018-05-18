@@ -1,9 +1,34 @@
+<?php
+	
+	
+
+
+?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!DOCTYPE html>
 <html>
 <head>
 	<title></title>
 </head>
 <body>
+
 	<h1 style="background-color: blue; color: white;">Employee Information</h1>
 
 	<?php
