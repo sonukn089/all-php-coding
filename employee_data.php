@@ -48,7 +48,7 @@
 		
 
 			$salary_structure = mysql_query(
-		"INSERT INTO `salary_structure`(
+					"INSERT INTO `salary_structure`(
 					'ctc',
 					'basic_salary',
 					'hra',
@@ -58,16 +58,38 @@
 					'esic',
 					'da' )
 
-		VALUES ('
-			".$_POST['ctc']."',
-			'".$_POST['basic_salary']."',
-			'".$_POST['hra']."',
-			'".$_POST['ths']."',
-			'".$_POST['epf']."',
-			'".$_POST['uan']."',
-			'".$_POST['esic']."',
-			'".$_POST['da']."',			
-		");	
+			VALUES ('".$employee_id."',
+				".$_POST['ctc']."',
+				'".$_POST['basic_salary']."',
+				'".$_POST['hra']."',
+				'".$_POST['ths']."',
+				'".$_POST['epf']."',
+				'".$_POST['uan']."',
+				'".$_POST['esic']."',
+				'".$_POST['da']."',			
+			");	
+
+			$education_detail = mysql_query(	
+					"INSERT INTO `education_details`(
+								'graduation',
+								'pgraduation',
+								'skills',
+								'designation',
+								'previous_company',
+								'deparment',
+								'experience',
+								'annual' )
+
+					VALUES ('
+							".$_POST['graduation']."',
+							'".$_POST['pgraduation']."',
+							'".$_POST['skills']."',
+							'".$_POST['designation']."',
+							'".$_POST['previous_company']."',
+							'".$_POST['deparment']."',
+							'".$_POST['experience']."',
+							'".$_POST['annual']."',			
+						");		
 ?>
 
 
