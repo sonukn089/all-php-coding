@@ -11,9 +11,9 @@
 						'first_name',
 						'middle_name',
 						'last_name',
-						email
-						dob
-						gender
+						'email',
+						'dob',
+						'gender',
 						fname
 						mname
 						nationality
