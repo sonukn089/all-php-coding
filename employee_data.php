@@ -14,18 +14,17 @@
 						'email',
 						'dob',
 						'gender',
-						fname
-						mname
-						nationality
-						pnumber
-						mnumber
-						marital
-						address
-						city
-						state
-						postal_code
-						created
-						)
+						'fname',
+						'mname',
+						'nationality',
+						'pnumber',
+						'mnumber',
+						'marital',
+						'address',
+						'city',
+						'state',
+						'postal_code')
+									
 
 
 
