@@ -1,6 +1,30 @@
 <?php
+	$path = "localhost";
+	$password = "";
+	$user = "root";
+
+	mysql_connect($path, $user, $password) or die("We couldn't connect");
+	$con = mysql_select_db("testschool");
 	
-	
+	id
+	first_name
+	middle_name
+	last_name
+	email
+	dob
+	gender
+	fname
+	mname
+	nationality
+	pnumber
+	mnumber
+	marital
+	address
+	city
+	state
+	postal_code
+	created
+
 
 
 ?>
