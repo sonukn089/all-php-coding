@@ -7,24 +7,43 @@
 	$con = mysql_select_db("testschool");
 	$employee_details = mysql_query(
 		"INSERT INTO `employee_registration`(
-						'id',
-						'first_name',
-						'middle_name',
-						'last_name',
-						'email',
-						'dob',
-						'gender',
-						'fname',
-						'mname',
-						'nationality',
-						'pnumber',
-						'mnumber',
-						'marital',
-						'address',
-						'city',
-						'state',
-						'postal_code')
-									
+					'id',
+					'first_name',
+					'middle_name',
+					'last_name',
+					'email',
+					'dob',
+					'gender',
+					'fname',
+					'mname',
+					'nationality',
+					'pnumber',
+					'mnumber',
+					'marital',
+					'address',
+					'city',
+					'state',
+					'postal_code')
+		VALUES ('
+			".$_POST['first_name']."',
+			'".$_POST['middle_name']."',
+			'".$_POST['last_name']."',
+			'".$_POST['email']."',
+			'".$_POST['dob']."',
+			'".$_POST['gender']."',
+			'".$_POST['fname']."',
+			'".$_POST['mname']."',
+			'".$_POST['nationality']."',
+			'".$_POST['pnumber']."',
+			'".$_POST['mnumber']."',
+			'".$_POST['marital']."',
+			'".$_POST['address']."',
+			'".$_POST['city']."',
+			'".$_POST['state']."',
+			'".$_POST['postal_code']."',
+		");			
+				
+		$employee_id = mysql_insert_id();							
 
 
 
