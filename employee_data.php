@@ -42,7 +42,6 @@
 	// 	"; die();
 
 
-
 	$employee_details = mysql_query(
 		"INSERT INTO `employee_registration`(
 					  `first_name`,
@@ -82,6 +81,27 @@
 				
 		$employee_id = mysql_insert_id();
 		
+
+			echo "INSERT INTO `salary_structure`(
+					'ctc',
+					'basic_salary',
+					'hra',
+					'ths',
+					'epf',
+					'uan',
+					'esic',
+					'da' )
+
+			VALUES ('".$employee_id."',
+				".$_POST['ctc']."',
+				'".$_POST['basic_salary']."',
+				'".$_POST['hra']."',
+				'".$_POST['ths']."',
+				'".$_POST['epf']."',
+				'".$_POST['uan']."',
+				'".$_POST['esic']."',
+				'".$_POST['da']."',			
+			");	
 
 			$salary_structure = mysql_query(
 					"INSERT INTO `salary_structure`(
