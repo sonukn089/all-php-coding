@@ -6,25 +6,26 @@
 	mysql_connect($path, $user, $password) or die("We couldn't connect");
 	$con = mysql_select_db("testschool");
 
+	
+	
 	$employee_details = mysql_query(
 		"INSERT INTO `employee_registration`(
-					'id',
-					'first_name',
-					'middle_name',
-					'last_name',
-					'email',
-					'dob',
-					'gender',
-					'fname',
-					'mname',
-					'nationality',
-					'pnumber',
-					'mnumber',
-					'marital',
-					'address',
-					'city',
-					'state',
-					'postal_code')
+					  `first_name`,
+					  `middle_name`,
+					  `last_name`,
+					  `email`,
+					   `dob`, 
+					   `gender`, 
+					   `fname`, 
+					   `mname`, 
+					   `nationality`, 
+					   `pnumber`, 
+					   `mnumber`, 
+					   `marital`, 
+					   `address`, 
+					   `city`, 
+					   `state`, 
+					   `postal_code`)
 		VALUES ('
 			".$_POST['first_name']."',
 			'".$_POST['middle_name']."',
@@ -41,44 +42,66 @@
 			'".$_POST['address']."',
 			'".$_POST['city']."',
 			'".$_POST['state']."',
-			'".$_POST['postal_code']."',
+			'".$_POST['postal_code']."')
 		");			
 				
 		$employee_id = mysql_insert_id();
-		
 
-			$salary_structure = mysql_query(
-					"INSERT INTO `salary_structure`(
-					'ctc',
-					'basic_salary',
-					'hra',
-					'ths',
-					'epf',
-					'uan',
-					'esic',
-					'da' )
+		echo "INSERT INTO `salary_structures`(
+						'employee_id',
+						`ctc`, 
+						`basic_salary`, 
+						`hra`, 
+						`ths`, 
+						`epf`, 
+						`uan`, 
+						`esic`, 
+						`da`)
+					VALUES ('".$employee_id."',
+						".$_POST['ctc']."',
+						'".$_POST['basic_salary']."',
+						'".$_POST['hra']."',
+						'".$_POST['ths']."',
+						'".$_POST['epf']."',
+						'".$_POST['uan']."',
+						'".$_POST['esic']."',
+						'".$_POST['da']."')			
+					";
+					/////
+		$salary_structure = mysql_query(
+						"INSERT INTO `salary_structures`(
+						'employee_id',
+						`ctc`, 
+						`basic_salary`, 
+						`hra`, 
+						`ths`, 
+						`epf`, 
+						`uan`, 
+						`esic`, 
+						`da`)
+					VALUES ('".$employee_id."',
+						".$_POST['ctc']."',
+						'".$_POST['basic_salary']."',
+						'".$_POST['hra']."',
+						'".$_POST['ths']."',
+						'".$_POST['epf']."',
+						'".$_POST['uan']."',
+						'".$_POST['esic']."',
+						'".$_POST['da']."')			
+					");
 
-			VALUES ('".$employee_id."',
-				".$_POST['ctc']."',
-				'".$_POST['basic_salary']."',
-				'".$_POST['hra']."',
-				'".$_POST['ths']."',
-				'".$_POST['epf']."',
-				'".$_POST['uan']."',
-				'".$_POST['esic']."',
-				'".$_POST['da']."',			
-			");	
-
+			echo $salary_structure;
+	
 			$education_detail = mysql_query(	
 					"INSERT INTO `education_details`(
-								'graduation',
-								'pgraduation',
-								'skills',
-								'designation',
-								'previous_company',
-								'deparment',
-								'experience',
-								'annual' )
+							'graduation',
+							'pgraduation',
+							'skills',
+							'designation',
+							'previous_company',
+							'deparment',
+							'experience',
+							'annual')
 
 					VALUES ('
 							".$_POST['graduation']."',
@@ -88,8 +111,10 @@
 							'".$_POST['previous_company']."',
 							'".$_POST['deparment']."',
 							'".$_POST['experience']."',
-							'".$_POST['annual']."',			
-						");		
+							'".$_POST['annual']."')			
+						");
+
+						echo "Sucessfully Record Insert";		
 ?>
 
 
