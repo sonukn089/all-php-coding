@@ -5,8 +5,6 @@
 
 	mysql_connect($path, $user, $password) or die("We couldn't connect");
 	$con = mysql_select_db("testschool");
-
-	
 	
 	$employee_details = mysql_query(
 		"INSERT INTO `employee_registration`(
@@ -43,14 +41,13 @@
 			'".$_POST['city']."',
 			'".$_POST['state']."',
 			'".$_POST['postal_code']."'
-		)");			
+		");			
 				
 		$employee_id = mysql_insert_id();
-
-		echo 
 		
 		$salary_structure = mysql_query(
 							"INSERT INTO `salary_structures`(
+							'employee_id',
 							`ctc`,
 							`basic_salary`,
 						  	`hra`, 
@@ -60,7 +57,7 @@
 							`esic`, 
 							`da`)
 
-					VALUES ('employee_id
+					VALUES ('".$employee_id."',
 						".$_POST['ctc']."',
 						'".$_POST['basic_salary']."',
 						'".$_POST['hra']."',
@@ -70,7 +67,7 @@
 						'".$_POST['esic']."',
 						'".$_POST['da']."'			
 					");
-	
+
 			$education_detail = mysql_query(	
 					"INSERT INTO `education_details`(
 								'graduation',
