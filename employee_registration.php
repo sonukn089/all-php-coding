@@ -25,7 +25,6 @@
 					<td>Gender</td>
 					<td>Father Name</td>
 					<td>Mother Name</td>
-					
 				</tr>
 				<tr>
 					<td><input type="date" name="dob"></td>
