@@ -90,22 +90,6 @@
 ?>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <!DOCTYPE html>
 <html>
 <head>
