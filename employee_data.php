@@ -120,6 +120,7 @@
 		echo "Marital Status : ".$_POST['marital']."<br>";
 		echo "<hr>";
 	?>
+	
 	<?php
 		echo "Address : ".$_POST['address']."<br>";
 		echo "City : ".$_POST['city']."<br>";
@@ -137,7 +138,7 @@
 		echo "Designation : ".$_POST['designation']."<br>";
 		echo "<hr>";
 	?>
-	
+
 	<?php
 		echo "Previous Company : ".$_POST['previous_company']."<br>";
 		echo "Deparment : ".$_POST['deparment']."<br>";
