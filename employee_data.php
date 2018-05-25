@@ -47,8 +47,8 @@
 				
 		$employee_id = mysql_insert_id();
 
-		echo "INSERT INTO `salary_structures`(
-						'employee_id',
+		$queryString = "INSERT INTO `salary_structures`(
+						`employee_id`,
 						`ctc`, 
 						`basic_salary`, 
 						`hra`, 
@@ -58,80 +58,36 @@
 						`esic`, 
 						`da`)
 					VALUES ('".$employee_id."',
-						".$_POST['ctc']."',
+						'".$_POST['ctc']."',
 						'".$_POST['basic_salary']."',
 						'".$_POST['hra']."',
 						'".$_POST['ths']."',
 						'".$_POST['epf']."',
 						'".$_POST['uan']."',
 						'".$_POST['esic']."',
-						'".$_POST['da']."')			
-					";
-					/////
-		$salary_structure = mysql_query(
-						"INSERT INTO `salary_structures`(
-						'employee_id',
-						`ctc`, 
-						`basic_salary`, 
-						`hra`, 
-						`ths`, 
-						`epf`, 
-						`uan`, 
-						`esic`, 
-						`da`)
-					VALUES ('".$employee_id."',
-						".$_POST['ctc']."',
-						'".$_POST['basic_salary']."',
-						'".$_POST['hra']."',
-						'".$_POST['ths']."',
-						'".$_POST['epf']."',
-						'".$_POST['uan']."',
-						'".$_POST['esic']."',
-						'".$_POST['da']."')			
-					");
-
-			echo $salary_structure;
-	
-			$education_detail = mysql_query(	
-					"INSERT INTO `education_details`(
-							'graduation',
-							'pgraduation',
-							'skills',
-							'designation',
-							'previous_company',
-							'deparment',
-							'experience',
-							'annual')
-
-					VALUES ('
-							".$_POST['graduation']."',
+						'".$_POST['da']."')";
+		$salary_structure = mysql_query($queryString);
+			$queryString = "INSERT INTO `education_details`(
+							`graduation`,
+							`pgraduation`,
+							`skills`,
+							`designation`,
+							`previous_company`,
+							`deparment`,
+							`experience`,
+							`annual`)
+					VALUES ('".$_POST['graduation']."',
 							'".$_POST['pgraduation']."',
 							'".$_POST['skills']."',
 							'".$_POST['designation']."',
 							'".$_POST['previous_company']."',
 							'".$_POST['deparment']."',
 							'".$_POST['experience']."',
-							'".$_POST['annual']."')			
-						");
+							'".$_POST['annual']."')";
+			$education_detail = mysql_query($queryString);
 
 						echo "Sucessfully Record Insert";		
 ?>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 <!DOCTYPE html>
@@ -150,6 +106,7 @@
 		echo "Email : ".$_POST['email']."<br>";
 		echo "<hr>";
 	?>
+	
 	<?php
 		echo "D.O.B : ".$_POST['dob']."<br>";
 		echo "Gender : ".$_POST['gender']."<br>";
@@ -157,6 +114,7 @@
 		echo "Mother Name : ".$_POST['mname']."<br>";
 		echo "<hr>";
 	?>
+
 	<?php
 		echo "Nationality : ".$_POST['nationality']."<br>";
 		echo "Phone : ".$_POST['pnumber']."<br>";
@@ -164,6 +122,7 @@
 		echo "Marital Status : ".$_POST['marital']."<br>";
 		echo "<hr>";
 	?>
+
 	<?php
 		echo "Address : ".$_POST['address']."<br>";
 		echo "City : ".$_POST['city']."<br>";
@@ -181,6 +140,7 @@
 		echo "Designation : ".$_POST['designation']."<br>";
 		echo "<hr>";
 	?>
+
 	<?php
 		echo "Previous Company : ".$_POST['previous_company']."<br>";
 		echo "Deparment : ".$_POST['deparment']."<br>";
