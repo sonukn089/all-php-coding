@@ -137,6 +137,7 @@
 		echo "Designation : ".$_POST['designation']."<br>";
 		echo "<hr>";
 	?>
+	
 	<?php
 		echo "Previous Company : ".$_POST['previous_company']."<br>";
 		echo "Deparment : ".$_POST['deparment']."<br>";
