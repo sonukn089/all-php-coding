@@ -106,6 +106,7 @@
 		echo "Email : ".$_POST['email']."<br>";
 		echo "<hr>";
 	?>
+	
 	<?php
 		echo "D.O.B : ".$_POST['dob']."<br>";
 		echo "Gender : ".$_POST['gender']."<br>";
@@ -113,6 +114,7 @@
 		echo "Mother Name : ".$_POST['mname']."<br>";
 		echo "<hr>";
 	?>
+
 	<?php
 		echo "Nationality : ".$_POST['nationality']."<br>";
 		echo "Phone : ".$_POST['pnumber']."<br>";
@@ -120,7 +122,7 @@
 		echo "Marital Status : ".$_POST['marital']."<br>";
 		echo "<hr>";
 	?>
-	
+
 	<?php
 		echo "Address : ".$_POST['address']."<br>";
 		echo "City : ".$_POST['city']."<br>";
